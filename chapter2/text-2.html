@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>로컬 스토리지(Local Storage)를 저장하는 함수</title>
+</head>
+<body>
+	<h3>로컬 스토리지(Local Storage)를 저장하는 함수 :  </h3>
+	<pre>
+     function savetheLocal(){
+          var second = document.getElementById("second");
+          var thevalue = second.value;
+          localStorage.setItem(1, thevalue);
+          gettheLocal();
+     }    
+	</pre>  <!--<pre> 태그는 HTML에서 preformatted text를 표시하는 데 사용됩니다. 이 태그 안에 포함된 텍스트는 공백, 줄바꿈, 들여쓰기 등을 포함하여 그대로 표시됩니다. 즉, <pre> 태그는 텍스트의 포맷팅을 유지하면서 화면에 표시하는 역할을 합니다.-->
+</body>
+</html>

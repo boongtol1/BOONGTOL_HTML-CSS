@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>표 만들기</title>	<!--CSS를 HTML 내에서 직접 작성할 수도 있고, 별도의 CSS 파일로 분리하여 모듈화할 수도 있습니다. 각각의 방법에는 장단점이 있으며, 사용 목적에 따라 선택하게 됩니다.(여기서는 모듈화 안함!)-->
+	<style>		/* 모듈화 안한 css 는 head 태그에 입력된다! 즉 css는 html 상에서 메타데이터에 해당한다! */
+		table, th, td {
+			border:1px solid #ccc;
+		}
+		td {
+			width:100px;  /* 셀 너비 */
+			height:30px;  /* 셀 높이 */
+		}
+	</style>
+</head>
+<body>	<!--table 은 tr,th,td 로 이루어진다!!! 각각, table row, table header, table data 를 의미한다-->
+	<table>	<!--<th>는 주로 표의 첫 번째 행에 사용되어 각 열의 제목을 정의합니다.or <th>는 때로는 첫 번째 열에 사용되어 각 행의 제목을 정의할 수도 있습니다.-->
+		<caption>colgroup 연습</caption>	<!-- <caption> 태그는 HTML 표(table)에서 표의 제목이나 설명을 추가하는 데 사용되는 태그입니다. 이 태그는 표의 상단에 위치하며, 표의 내용을 간단히 설명하는 역할을 합니다. -->
+											
+		<colgroup>
+			<col>	
+			<col span="1" style="background-color:blue;">	<!--<colgroup> 및 그 내부의 <col> 태그들은 HTML 표에서 특정 열(컬럼)의 스타일이나 속성을 정의하고 그룹화하는 데 사용됩니다. 이 구조는 표의 레이아웃과 스타일링을 더 세밀하게 조정하는 데 유용합니다.-->
+<!--기본적으로 <col>에서 span 값은 1이다!(언급 없으면) & <col> 을 꼭 안써도 된다! 안쓰면 그냥 <col> 과 동일한 효과가 난다!-->
+			
+			<col style="background-color:yellow">
+		</colgroup>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</body>
+</html>
