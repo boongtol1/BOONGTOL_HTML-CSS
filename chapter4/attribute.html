@@ -40,16 +40,16 @@
   		<fieldset id="subject">	<!-- form 태그 내부에서 묶는데 쓰인다! -->
   			<legend>수강과목</legend>
   			<ul>
-  				<li>
+  				<li> <!--label은 폼의 이름이라기보다는 폼 내의 특정 필드(입력란)를 설명하는 역할을 하는 텍스트입니다.-->
   					<label class="reg" for="subj">영어회화(초급)</label>
-  					<input type="text" id="subj" value="오전 9:00~11:00" readonly>
-  				</li>
+  					<input type="text" id="subj" value="오전 9:00~11:00" readonly> <!-- input 태그는 입력란을 만드는 역할을 한다! -->
+  				</li>	<!--<input> 태그는 입력란을 만드는 데 가장 일반적으로 사용되는 태그 중 하나이지만, 이것이 유일한 방법은 아닙니다. -->
   			</ul>
   		</fieldset>
   		<fieldset id="register">
   			<legend> 신청자</legend>
   			<ul>
-  				<li>
+  				<li> 
   					<label class="reg" for="uname">이름</label>
   					<input type="text" id="uname" autofocus required>
   				</li>
@@ -96,3 +96,5 @@
   	</form>
   </body>
 </html>
+
+<!--label은 폼의 이름이라기보다는 폼 내의 특정 필드(입력란)를 설명하는 역할을 하는 텍스트입니다.-->
